@@ -1,0 +1,12 @@
+data_source "<%= @cluster_name %>" 127.0.0.1
+
+<% if @gridname -%>
+gridname "<%= @gridname %>"
+<% else -%>
+# gridname "MyGrid"
+<% end -%>
+
+setuid_username "<%= @gmetad_user %>"
+
+case_sensitive_hostnames <%= @gmetad_case_sensitive_hostnames %>
+
