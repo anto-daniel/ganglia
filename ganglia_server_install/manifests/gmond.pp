@@ -1,6 +1,7 @@
 class ganglia_server_install::gmond(
 $cluster_name = undef,
-$gmond_user = undef) {
+$gmond_user = undef,
+$ganglia_host = undef) {
 
 #    exec{ 'gmond':
 #	command => '/usr/sbin/gmond -t | /usr/bin/tee /etc/ganglia/gmond.conf',
